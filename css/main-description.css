@@ -1,0 +1,89 @@
+.main-description {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+.main-description__wrap {
+  margin-bottom: 16px;
+}
+.main-description__text {
+  letter-spacing: 0.2px;
+}
+.main-description__text_second {
+  display: none;
+}
+.main-description__text_third {
+  display: none;
+}
+.main-description__group {
+  margin: 0 16px 16px;
+}
+.main__button {
+  margin-left: 32px;
+  font-family: "TT Lakes Medium", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: -0.2px;
+}
+.main__button::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-image: url("/img/icon/arrows.svg");
+  width: 24px;
+  height: 24px;
+}
+
+.wrap {
+  position: relative;
+}
+
+@media (min-width: 768px) {
+  .main-description {
+    flex-direction: row;
+    justify-content: start;
+    margin: 0 24px;
+  }
+  .main-description__wrap {
+    margin-bottom: 10px;
+  }
+  .main-description__group {
+    flex-basis: 50%;
+    margin: 0;
+  }
+  .main-description__text {
+    margin-right: 46px;
+    line-height: 20px;
+  }
+  .main-description__text_first {
+    margin-bottom: 20px;
+  }
+  .main-description__text_second {
+    display: block;
+  }
+  .main__pic {
+    flex-basis: 50%;
+  }
+}
+@media (min-width: 1120px) {
+  .main-description__wrap {
+    padding: 10px 20px 10px 10px;
+    margin-bottom: 3px;
+  }
+  .main-description__text {
+    margin-right: 0;
+  }
+  .main-description__text_second {
+    display: inline;
+  }
+  .main-description__text_third {
+    display: inline;
+  }
+  .main__button {
+    margin: 0 0 0 41px;
+  }
+  .main__button::before {
+    left: 8px;
+  }
+}

@@ -1,0 +1,85 @@
+@import "variables";
+
+.navigation {
+    &-margin {
+        margin-bottom: 24px;
+    }
+
+    &-list {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        overflow-x: scroll;
+
+        &__item {
+            &-invisible {
+                display: none;
+            }
+
+            white-space: nowrap;
+            padding: 6px 15px;
+            margin-right: 10px;
+
+            &-active {
+                border: 2px solid $green-active;
+                border-radius: 6px;
+                background-color: $white;
+            }
+        }
+
+        &__text {
+            font-size: 16px;
+            line-height: 24px;
+            letter-spacing: -0.2px;
+            color: $gray;
+        }
+    }
+}
+
+@media (min-width: $tablet-width) {
+    .navigation {
+        &-margin {
+            margin-bottom: 32px;
+        }
+
+        &-list {
+
+            &__item {
+                padding: 6px 18px;
+                margin-right: -2px;
+            }
+        }
+    }
+}
+
+@media (min-width: $desktop-width) {
+    .navigation {
+        &-margin {
+            margin-bottom: 5px;
+        }
+
+        &-list {
+            flex-wrap: wrap;
+            min-height: 82px;
+
+            &__item {
+                padding: 6px 18px;
+                margin-right: -2px;
+
+                &-invisible {
+                    display: block;
+                }
+
+                &-no-active {
+                    border: none;
+                    border-radius: none;
+                    background-color: inherit;
+                }
+
+                &-add-services {
+                    display: none;
+                }
+            }
+        }
+    }
+}

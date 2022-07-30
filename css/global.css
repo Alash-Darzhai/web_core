@@ -1,0 +1,55 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+button {
+  padding: 0;
+  border: none;
+  font: inherit;
+  color: inherit;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+img {
+  height: auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+.body {
+  min-width: 320px;
+  min-height: 100%;
+  margin: 0;
+  font-size: 14px;
+  font-family: "TT Lakes Regular", sans-serif;
+  line-height: 18px;
+  background-color: var(--bg-gray);
+  overflow-x: scroll;
+}
+
+.container {
+  min-width: 288px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+@media (min-width: 768px) {
+  .container {
+    min-width: 720px;
+    padding: 0 24px;
+  }
+}
+@media (min-width: 1120px) {
+  .container {
+    min-width: 1120px;
+    padding: 0 32px;
+  }
+}
