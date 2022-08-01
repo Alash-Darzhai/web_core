@@ -241,7 +241,7 @@ a {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  overflow-x: scroll;
+  overflow-x: hidden;
 }
 .navigation-list__item {
   white-space: nowrap;
