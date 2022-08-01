@@ -5,7 +5,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  overflow-x: hidden;
+  overflow-x: scroll;
 }
 .navigation-list__item {
   white-space: nowrap;
@@ -43,6 +43,7 @@
   .navigation-list {
     flex-wrap: wrap;
     min-height: 82px;
+    overflow-x: hidden;
   }
   .navigation-list__item {
     padding: 6px 18px;

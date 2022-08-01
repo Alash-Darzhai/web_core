@@ -9,7 +9,7 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
-        overflow-x: hidden;
+        overflow-x: scroll;
 
         &__item {
             &-invisible {
@@ -61,6 +61,8 @@
         &-list {
             flex-wrap: wrap;
             min-height: 82px;
+            overflow-x: hidden;
+
 
             &__item {
                 padding: 6px 18px;

@@ -61,10 +61,10 @@
     display: block;
     margin-right: 26px;
   }
-  .menu__icon_profile::before {
+  .menu__item_profile::before {
     content: "";
     position: absolute;
-    left: 4px;
+    right: 4px;
     top: 6px;
     width: 2px;
     height: 32px;

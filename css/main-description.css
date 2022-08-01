@@ -30,7 +30,7 @@
   position: absolute;
   top: 0;
   left: 0;
-  background-image: url("/img/icon/arrows.svg");
+  background-image: url("../img/icon/arrows.svg");
   width: 24px;
   height: 24px;
 }
