@@ -1,0 +1,100 @@
+@import 'global';
+@import 'fonts';
+@import 'variables';
+
+.sidebar {
+    margin-right: auto;
+    width: 320px;
+    height: 1024px;
+    font-family: $tt-lakes-regular;
+    background-color: $white;
+    box-shadow: -2px 0px 4px $shadow1,
+        16px 0px 52px $shadow2;
+
+    &-header {
+        margin-bottom: 47px;
+        padding-top: 15px;
+    }
+
+    &-menu {
+        margin-bottom: 268px;
+
+        &__list {
+            display: flex;
+            flex-direction: column;
+            gap: 32px;
+        }
+
+        &__item {
+            position: relative;
+        }
+
+        &__link {
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 24px;
+            letter-spacing: -0.2px;
+            color: $dark-black;
+
+            &_active {
+                color: $gray;
+            }
+
+            &_active::before {
+                content: "";
+                position: absolute;
+                top: -3px;
+                left: -27px;
+                width: 6px;
+                height: 32px;
+                background-color: $light-green;
+                border-radius: 5px;
+            }
+        }
+    }
+
+    &-footer {
+        &_menu {
+            justify-content: flex-start;
+            margin-bottom: 12px;
+            gap: 16px;
+        }
+
+        &__email {
+            margin-bottom: 12px;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 24px;
+            letter-spacing: -0.2px;
+        }
+
+        &__phone {
+            margin-bottom: 40px;
+
+            &-link {
+                font-family: $tt-lakes-bold;
+                font-size: 24px;
+                font-weight: 700;
+                line-height: 32px;
+                letter-spacing: -0.6px;
+                color: $dark-black;
+            }
+        }
+    }
+}
+
+.lang-list {
+    display: flex;
+    gap: 7px;
+
+    &__item {
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 24px;
+        letter-spacing: -0.2px;
+
+        &_active {
+            color: $gray;
+        }
+    }
+}

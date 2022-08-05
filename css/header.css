@@ -38,6 +38,11 @@
 .menu__icon_profile {
   display: none;
 }
+.menu__icon_sidebar {
+  position: relative;
+  top: 3px;
+  left: -25px;
+}
 
 @media (min-width: 768px) {
   .menu {

@@ -36,16 +36,30 @@
         border-radius: 1px;
     }
 
-    &__icon_call {
-        display: none;
+    &__icon {
+        &_call {
+            display: none;
+        }
     }
 
-    &__icon_chat {
-        display: none;
+    &__icon {
+        &_chat {
+            display: none;
+        }
     }
 
-    &__icon_profile {
-        display: none;
+    &__icon {
+        &_profile {
+            display: none;
+        }
+    }
+
+    &__icon {
+        &_sidebar {
+            position: relative;
+            top: 3px;
+            left: -25px;
+        }
     }
 }
 
