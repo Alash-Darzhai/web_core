@@ -12,12 +12,17 @@
         16px 0px 52px $shadow2;
 
     &-header {
-        margin-bottom: 47px;
-        padding-top: 15px;
+        &_wrap {
+            margin-bottom: 47px;
+            padding-top: 15px;
+        }
     }
 
     &-menu {
-        margin-bottom: 268px;
+        &_margin {
+            flex-grow: 1;
+
+        }
 
         &__list {
             display: flex;
@@ -37,6 +42,7 @@
             line-height: 24px;
             letter-spacing: -0.2px;
             color: $dark-black;
+            transition-duration: 1.5s;
 
             &_active {
                 color: $gray;
@@ -57,27 +63,31 @@
         &__link:hover {
             transition-duration: 1s;
             color: $dark-pink;
-            text-decoration: underline;
         }
     }
 
     &-footer {
         &_menu {
             justify-content: flex-start;
-            margin-bottom: 12px;
+            margin-bottom: 11px;
             gap: 16px;
         }
 
         &__email {
-            margin-bottom: 12px;
             font-weight: 500;
             font-size: 16px;
             line-height: 24px;
             letter-spacing: -0.2px;
+
+            &_view {
+                margin-bottom: 12px;
+            }
         }
 
         &__phone {
-            margin-bottom: 40px;
+            &_view {
+                margin-bottom: 39px;
+            }
 
             &-link {
                 font-family: $tt-lakes-bold;
@@ -87,6 +97,10 @@
                 letter-spacing: -0.6px;
                 color: $dark-black;
             }
+        }
+
+        &__lang {
+            padding-bottom: 32px;
         }
     }
 }
