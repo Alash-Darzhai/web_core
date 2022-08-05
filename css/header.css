@@ -19,6 +19,10 @@
 .menu__item_main-checkstatus {
   display: none;
 }
+.menu__item:hover {
+  transition-duration: 1s;
+  opacity: 0.5;
+}
 .menu__link_border::after {
   content: "";
   position: absolute;

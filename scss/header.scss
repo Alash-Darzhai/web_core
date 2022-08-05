@@ -25,6 +25,11 @@
         }
     }
 
+    &__item:hover {
+        transition-duration: 1s;
+        opacity: 0.5;
+    }
+
     &__link_border::after {
         content: "";
         position: absolute;

@@ -109,6 +109,10 @@ a {
 .menu__item_main-checkstatus {
   display: none;
 }
+.menu__item:hover {
+  transition-duration: 1s;
+  opacity: 0.5;
+}
 .menu__link_border::after {
   content: "";
   position: absolute;
@@ -533,6 +537,11 @@ a {
   height: 32px;
   background-color: #41F6D7;
   border-radius: 5px;
+}
+.sidebar-menu__link:hover {
+  transition-duration: 1s;
+  color: #FF3E79;
+  text-decoration: underline;
 }
 .sidebar-footer_menu {
   justify-content: flex-start;
