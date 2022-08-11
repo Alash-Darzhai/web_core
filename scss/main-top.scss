@@ -25,6 +25,24 @@
         border-radius: 10px;
     }
 
+    &__subtitle {
+        font-family: $tt-lakes-regular;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 24px;
+        letter-spacing: -0.2px;
+        background: linear-gradient(to right, $bg-gray 0%, $white 98.61%);
+        // transform: matrix(-1, 0, 0, 1, 0, 0);
+        color: $gray;
+        text-transform: uppercase;
+
+        &_view {
+            margin-bottom: 16px;
+            padding: 16px;
+            border-top: 1px solid $light-green-border;
+        }
+    }
+
     &__pic {
         margin: 0 auto;
     }
@@ -45,6 +63,13 @@
         &__title::before {
             left: -24px;
         }
+
+        &__subtitle {
+            &_view {
+                margin-bottom: 23px;
+                padding-left: 24px;
+            }
+        }
     }
 }
 
@@ -57,6 +82,12 @@
 
         &__title::before {
             left: -33px;
+        }
+
+        &__subtitle {
+            &_view {
+                padding-left: 32px;
+            }
         }
     }
 

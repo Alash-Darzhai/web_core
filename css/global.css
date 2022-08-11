@@ -32,12 +32,11 @@ a {
   font-size: 14px;
   font-family: "TT Lakes Regular", sans-serif;
   line-height: 18px;
-  background-color: var(--bg-gray);
+  background-color: #F8F8F8;
   overflow-x: scroll;
 }
 
 .container {
-  min-width: 288px;
   margin: 0 auto;
   padding: 0 16px;
 }

@@ -34,12 +34,12 @@ a {
   font-size: 14px;
   font-family: $tt-lakes-regular;
   line-height: 18px;
-  background-color: var(--bg-gray);
+  background-color: $bg-gray;
   overflow-x: scroll;
 }
 
 .container {
-  min-width: 288px;
+  // min-width: 288px;
   margin: 0 auto;
   padding: 0 16px;
 }

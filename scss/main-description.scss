@@ -33,6 +33,10 @@
         font-size: 16px;
         line-height: 24px;
         letter-spacing: -0.2px;
+
+        &_hide {
+            display: none;
+        }
     }
 
     &__button::before {
@@ -84,6 +88,15 @@
             flex-basis: 50%;
         }
 
+        &__button {
+            &_hide {
+                display: block;
+            }
+        }
+    }
+
+    .wrap {
+        left: 23px;
     }
 }
 

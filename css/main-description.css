@@ -25,6 +25,9 @@
   line-height: 24px;
   letter-spacing: -0.2px;
 }
+.main__button_hide {
+  display: none;
+}
 .main__button::before {
   content: "";
   position: absolute;
@@ -64,6 +67,13 @@
   }
   .main__pic {
     flex-basis: 50%;
+  }
+  .main__button_hide {
+    display: block;
+  }
+
+  .wrap {
+    left: 23px;
   }
 }
 @media (min-width: 1120px) {
