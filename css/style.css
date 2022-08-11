@@ -255,9 +255,6 @@ a {
   .main__title::before {
     left: -33px;
   }
-  .main__subtitle {
-    max-width: 1120px;
-  }
   .main__subtitle_view {
     padding-left: 32px;
   }
