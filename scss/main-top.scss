@@ -3,6 +3,12 @@
 .main {
     background-color: $bg-gray;
 
+    &-title {
+        &-wrap {
+            background: linear-gradient(to right, $bg-gray 0%, $white 98.61%);
+        }
+    }
+
     &__wrap {
         padding: 24px 0;
     }
@@ -31,7 +37,7 @@
         font-weight: 500;
         line-height: 24px;
         letter-spacing: -0.2px;
-        background: linear-gradient(to right, $bg-gray 0%, $white 98.61%);
+
         // transform: matrix(-1, 0, 0, 1, 0, 0);
         color: $gray;
         text-transform: uppercase;

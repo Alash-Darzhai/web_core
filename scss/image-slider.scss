@@ -104,4 +104,10 @@
             }
         }
     }
+
+    .wrapper {
+        &_bottom {
+            padding-top: 23px
+        }
+    }
 }

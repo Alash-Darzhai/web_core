@@ -194,6 +194,9 @@ a {
 .main {
   background-color: #F8F8F8;
 }
+.main-title-wrap {
+  background: linear-gradient(to right, #F8F8F8 0%, #FFFFFF 98.61%);
+}
 .main__wrap {
   padding: 24px 0;
 }
@@ -219,7 +222,6 @@ a {
   font-weight: 500;
   line-height: 24px;
   letter-spacing: -0.2px;
-  background: linear-gradient(to right, #F8F8F8 0%, #FFFFFF 98.61%);
   color: #7E7E82;
   text-transform: uppercase;
 }
@@ -702,5 +704,9 @@ a {
   }
   .image-slider__slide_view:nth-child(8) {
     display: block;
+  }
+
+  .wrapper_bottom {
+    padding-top: 23px;
   }
 }

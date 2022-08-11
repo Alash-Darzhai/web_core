@@ -37,9 +37,9 @@ function swiperMode() {
                     el: '.swiper-pagination',
                     clickable: true,
                 },
-                // loop: true,
                 freeMode: true,
-
+                loop: true,
+                slidesPerView: 1.25,
                 breakpoints: {
                     768: {
 
