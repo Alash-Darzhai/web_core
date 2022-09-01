@@ -1,0 +1,150 @@
+@import "_variables";
+
+.main {
+  background-color: $bg-gray;
+
+  &-title {
+    &-wrap {
+      background: linear-gradient(to right, $bg-gray 0%, $white 98.61%);
+    }
+  }
+
+  &__wrap {
+    padding: 24px 0;
+  }
+
+  &__title {
+    position: relative;
+    font-family: $tt-lakes-bold;
+    line-height: 40px;
+    letter-spacing: -0.6px;
+  }
+
+  &__title::before {
+    content: "";
+    position: absolute;
+    left: -17px;
+    top: 0;
+    width: 4px;
+    height: 40px;
+    background: $light-green;
+    border-radius: 10px;
+  }
+
+  &__subtitle {
+    font-family: $tt-lakes-regular;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: -0.2px;
+    color: $gray;
+    text-transform: uppercase;
+
+    &--view {
+      margin-bottom: 16px;
+      padding: 16px;
+      border-top: 1px solid $light-green-border;
+    }
+
+    &--second-slider {
+      margin-top: 16px;
+    }
+  }
+
+  &__pic {
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: $tablet-width) {
+
+  .main {
+    &__top {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    &__wrap {
+      padding: 25px 0 31px;
+    }
+
+    &__title::before {
+      left: -24px;
+    }
+
+    &__subtitle {
+
+      &--view {
+        margin-top: 9px;
+        margin-bottom: 23px;
+        padding-left: 24px;
+      }
+    }
+
+    &-title-wrap {
+      &--view {
+        margin-bottom: 10px;
+      }
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main {
+
+    &__wrap {
+      padding: 42px 0 10px;
+    }
+
+    &__title::before {
+      left: -33px;
+    }
+
+    &__subtitle {
+
+      &--view {
+        padding-left: 32px;
+      }
+    }
+  }
+
+  .menu {
+    &__text {
+      &--bold {
+        font-family: $tt-lakes-medium;
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: -0.2px;
+        color: $dark-black
+      }
+    }
+
+    &__link {
+      &--main-repair {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        min-width: 173px;
+      }
+
+      &--main-checkstatus {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-left: 16px;
+        min-width: 167px;
+      }
+    }
+  }
+}
+
+@media (min-width: $desktop-width-menu) {
+
+  .main {
+    &__subtitle {
+      &--third-slider {
+        margin-bottom: 32px;
+      }
+    }
+  }
+}

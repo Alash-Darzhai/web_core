@@ -1,0 +1,51 @@
+@import '_variables';
+
+.main {
+  position: relative;
+  z-index: 1;
+}
+
+
+@media (min-width: $tablet-width) {
+  .main {
+    min-width: 768px;
+    margin: 0 auto;
+
+    &-container {
+      transition: 1s ease;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main {
+    min-width: 1120px;
+  }
+}
+
+@media (min-width: $desktop-width-menu) {
+
+  .main {
+    width: 1360px;
+    display: flex;
+    gap: 32px;
+    transition: 1s ease;
+    margin: 0;
+
+    &-container {
+      margin-left: -30px;
+      transition: 1s ease;
+    }
+  }
+}
+
+@media (min-width: 1500px) {
+
+  .main {
+    width: 1440px;
+
+    &--margin {
+      margin: 0 auto;
+    }
+  }
+}

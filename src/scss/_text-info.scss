@@ -1,0 +1,66 @@
+@import '_global';
+@import '_fonts';
+@import '_variables';
+
+.text-info {
+  font-family: $tt-lakes-regular;
+  line-height: 20px;
+  letter-spacing: 0.2px;
+  text-align: left;
+
+  &--view {
+    margin: 0 16px 68px 16px;
+  }
+
+  &__description {
+    &--margin {
+      margin-bottom: 14px;
+    }
+  }
+
+  &__link {
+    font-size: 16px;
+    font-weight: 700;
+    color: $dark-black;
+  }
+
+  &__arrow {
+    position: relative;
+  }
+
+  &__arrow::after {
+    content: "";
+    position: absolute;
+    background-image: url(../img/icon/button-icon-offer.svg);
+    top: -2px;
+    right: -21px;
+    width: 24px;
+    height: 27px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .text-info {
+    &--view {
+      margin: 0 20px 78px 20px;
+      width: 421px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .text-info {
+    &--view {
+      margin: 0 30px 70px 30px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width-menu) {
+  .text-info {
+    &--view {
+      margin: 29px 29px 82px 29px;
+
+    }
+  }
+}

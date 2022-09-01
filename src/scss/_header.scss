@@ -1,0 +1,171 @@
+@import '_variables';
+
+.header {
+  background-color: $white;
+
+  &-nav__list {
+    min-height: 88px;
+  }
+}
+
+.menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &__item {
+    position: relative;
+    transition: 0.5s;
+    scale: 1;
+  }
+
+  &__item:hover {
+    transition: 0.5s;
+    scale: 1.2;
+  }
+
+  &__link {
+    &--main-checkstatus {
+      display: none;
+    }
+
+    &--main-repair {
+      display: none;
+    }
+
+    &--border::after {
+      content: "";
+      position: absolute;
+      right: -22px;
+      top: 15px;
+      width: 2px;
+      height: 32px;
+      background: $light-gray2;
+      border-radius: 1px;
+    }
+  }
+
+  &__icon {
+    &--call {
+      display: none;
+    }
+  }
+
+  &__icon {
+    &--chat {
+      display: none;
+    }
+  }
+
+  &__icon {
+    &--profile {
+      display: none;
+    }
+  }
+
+  &__icon {
+    &--sidebar {
+      position: relative;
+      top: 1px;
+      left: -43px;
+    }
+  }
+}
+
+
+@media (min-width: $tablet-width) {
+  .menu {
+    gap: 16px;
+
+    &__icon {
+      &--sidebar {
+        top: 1px;
+        left: -12px;
+      }
+    }
+
+    &__item {
+      &--logo {
+        flex-grow: 1;
+        margin-left: 25px;
+      }
+    }
+
+    &__link {
+      &--border::after {
+        top: 12px;
+        left: -21px;
+      }
+
+      &--profile::before {
+        content: "";
+        position: absolute;
+        right: 4px;
+        top: 6px;
+        width: 2px;
+        height: 32px;
+        background: $light-gray2;
+        border-radius: 1px;
+      }
+    }
+
+    &__icon {
+      &--call {
+        display: block;
+      }
+    }
+
+    &__icon {
+      &--chat {
+        display: block;
+      }
+
+      &--profile {
+        display: block;
+        margin-right: 26px;
+      }
+    }
+  }
+
+}
+
+
+@media (min-width: $desktop-width) {
+
+  .menu {
+    &__item {
+      position: relative;
+    }
+
+    &__link {
+      &--main-repair {
+        display: block;
+      }
+
+      &--main-checkstatus {
+        display: block;
+      }
+    }
+  }
+}
+
+
+@media (min-width: $desktop-width-menu) {
+  .header {
+    display: none;
+  }
+
+  .menu {
+    &__link {
+      &--close {
+        display: none;
+      }
+    }
+
+    &__icon {
+      &--sidebar {
+        left: -43px;
+      }
+    }
+  }
+}

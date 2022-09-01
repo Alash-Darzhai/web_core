@@ -1,0 +1,59 @@
+@import '_variables';
+@import '_global';
+@import '_fonts';
+
+
+.footer {
+  &--margin {
+    margin-bottom: 19px;
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    color: $gray;
+    text-align: center;
+    opacity: 0.72;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .footer {
+    &__list {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+
+    &__item {
+      flex-basis: 33%;
+
+      &--first {
+        text-align: left;
+      }
+
+      &--third {
+        text-align: right;
+      }
+    }
+  }
+}
+
+// @media (min-width: $desktop-width) {
+// }
+@media (min-width: $desktop-width-menu) {
+
+  .footer {
+    &__list {
+      justify-content: flex-start;
+      gap: 31px;
+    }
+
+    &__item {
+
+      &--second {
+        text-align: left;
+      }
+    }
+  }
+}
