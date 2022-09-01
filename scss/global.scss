@@ -1,0 +1,64 @@
+@import 'variables';
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+button {
+  padding: 0;
+  border: none;
+  font: inherit;
+  color: inherit;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+.body {
+  min-width: 320px;
+  min-height: 100%;
+  margin: 0;
+  font-size: 14px;
+  font-family: $tt-lakes-regular;
+  line-height: 18px;
+  background-color: var(--bg-gray);
+  overflow-x: scroll;
+}
+
+.container {
+  min-width: 288px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+@media (min-width: $tablet-width) {
+  .container {
+    min-width: 720px;
+    padding: 0 24px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .container {
+    min-width: 1120px;
+    padding: 0 32px;
+  }
+
+  .wrapper {
+    max-width: 1320px;
+    margin: 0 auto;
+  }
+}

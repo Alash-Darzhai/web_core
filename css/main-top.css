@@ -1,0 +1,67 @@
+.main {
+  background-color: #F8F8F8;
+}
+.main__wrap {
+  padding: 24px 0;
+}
+.main__title {
+  position: relative;
+  font-family: "TT Lakes Bold", sans-serif;
+  line-height: 40px;
+  letter-spacing: -0.6px;
+}
+.main__title::before {
+  content: "";
+  position: absolute;
+  left: -17px;
+  top: 0;
+  width: 4px;
+  height: 40px;
+  background: #41F6D7;
+  border-radius: 10px;
+}
+.main__pic {
+  margin: 0 auto;
+}
+
+@media (min-width: 768px) {
+  .main__top {
+    display: flex;
+    justify-content: space-between;
+  }
+  .main__wrap {
+    padding: 25px 0 31px;
+  }
+  .main__title::before {
+    left: -24px;
+  }
+}
+@media (min-width: 1120px) {
+  .main__wrap {
+    padding: 42px 0 10px;
+  }
+  .main__title::before {
+    left: -33px;
+  }
+
+  .menu__item_main-repair {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-width: 173px;
+  }
+  .menu__item_main-checkstatus {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 16px;
+    min-width: 167px;
+  }
+  .menu__text_bold {
+    font-family: "TT Lakes Medium", sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.2px;
+    color: #1B1C21;
+  }
+}
